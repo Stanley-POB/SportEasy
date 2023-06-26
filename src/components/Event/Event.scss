@@ -2,4 +2,73 @@
 
 .event-container {
   padding: $margin-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .event-detail {
+    border: 1px solid $light-grey;
+    width: 828px;
+    height: 187px;
+    top: 143px;
+    left: 164px;
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  .top-event-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue-sporteasy;
+    line-height: 0;
+  }
+
+  .bottom-event-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+  }
+
+  .game-detail {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 0;
+  }
+
+  .score {
+    background-color: $very-almost-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 36px;
+    top: 269px;
+    left: 541px;
+    border-radius: 4px;
+    gap: 10px;
+  }
+
+  .win-text {
+    color: $green;
+  }
+
+  .lose-text {
+    color: $red;
+  }
+
+  .white-text {
+    color: $almost-grey;
+  }
+
+  .large-text {
+    font-size: $font-large;
+  }
+
+  .small-text {
+    font-size: $font-small;
+  }
 }
