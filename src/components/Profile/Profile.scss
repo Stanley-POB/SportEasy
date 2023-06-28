@@ -1,0 +1,34 @@
+@import "../../vars.scss";
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    width: 200px;
+
+    .img {
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+        background:lightgray 50% / cover no-repeat;
+    }
+
+    .profile-img {
+        margin-top: $margin-small;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+    }
+}
+

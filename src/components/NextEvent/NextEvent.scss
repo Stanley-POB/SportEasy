@@ -1,0 +1,27 @@
+@import "../../vars.scss";
+
+.next-event-container {
+    border-radius: 4px;
+    border: 1px solid var(--neutral-almost-grey, #EDF0F3);
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-event-teams {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.next-event-game {
+    border-bottom: 1px solid $almost-grey;
+    width: 90%;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+}

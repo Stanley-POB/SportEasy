@@ -1,8 +1,36 @@
 @import "../../vars.scss";
 
 .event-container {
-  padding: $margin-large;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+}
+
+.event-title {
+  width: 65%;
+}
+
+.event-middle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 90%;
+  height: 70%;
+  border: 1px solid violet;
+}
+
+.event-container-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+}
+
+.event-container-rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

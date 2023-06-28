@@ -3,10 +3,7 @@
 
 .event-detail {
     border: 1px solid $light-grey;
-    width: 828px;
-    height: 187px;
-    top: 143px;
-    left: 164px;
+    width: 100%;
     border-radius: 4px;
 }
     .top-event-detail {
@@ -15,7 +12,7 @@
     justify-content: center;
     align-items: center;
     background-color: $blue-sporteasy;
-    line-height: 0;
+    line-height: 0
     }
 
     .bottom-event-detail {
@@ -28,7 +25,14 @@
     padding: 10px;
     }
 
-    .game-detail {
+    .game-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .score-detail {
     display: flex;
     justify-content: center;
     align-items: center;
