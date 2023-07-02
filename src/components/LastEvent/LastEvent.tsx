@@ -13,11 +13,23 @@ export default function LastEvent( {event} : LastNextEventTypeProps) {
       <div className='last-event-teams'>
         <div className='team'>
           <p>{event.left_team.name}</p>
-          <p>{event.left_team.score}</p>
+          <p className={
+            event.left_team.score !== null && event.right_team.score
+              ? (event.left_team.score > event.right_team.score ? 'winner' : 'loser')
+              : 'undefined-score'
+          }>
+            {event.left_team.score !== null ? event.left_team.score : '-'}
+          </p>
         </div>
         <div className='team'>
           <p>{event.right_team.name}</p>
-          <p>{event.right_team.score}</p>
+          <p className={
+            event.right_team.score !== null && event.left_team.score !== null
+              ? (event.right_team.score > event.left_team.score ? 'winner' : 'loser')
+              : 'undefined-score'
+          }>
+            {event.right_team.score !== null ? event.right_team.score : '-'}
+          </p>
         </div>
       </div>
     </div>
