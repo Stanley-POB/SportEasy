@@ -32,9 +32,19 @@ export default function EventDetail( {eventDetail} : EventDetailProps ) {
             <div className="score-detail">
                 <p>{eventDetail.left_team.name}</p>
                 <div className="score">
-                    <p className="win-text">{eventDetail.left_team.score}</p>
+                  <p className={eventDetail.left_team.score !== null && eventDetail.right_team.score
+              ? (eventDetail.left_team.score > eventDetail.right_team.score ? 'winner' : 'loser')
+              : 'undefined-score'
+          }>
+            {eventDetail.left_team.score !== null ? eventDetail.left_team.score : '-'}
+                  </p>
                     <p>-</p>
-                    <p className="lose-text">{eventDetail.right_team.score}</p>
+                    <p className={eventDetail.right_team.score !== null && eventDetail.left_team.score !== null
+              ? (eventDetail.right_team.score > eventDetail.left_team.score ? 'winner' : 'loser')
+              : 'undefined-score'
+          }>
+            {eventDetail.right_team.score !== null ? eventDetail.right_team.score : '-'}
+                  </p>
                 </div>
                 <p>{eventDetail.right_team.name}</p>
             </div>

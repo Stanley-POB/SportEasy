@@ -26,7 +26,7 @@ export default function Attendees ({ attendees } : AttendeesProps) {
         <tbody>
           {attendees.map((attendee: AttendeeType) => (
             <tr key={attendee.email}>
-              <td>
+              <td className='attendee-picture'>
                 <img src={attendee.photo_url} alt="Attendee" />
               </td>
               <td>{attendee.last_name}</td>
