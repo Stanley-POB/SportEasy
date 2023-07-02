@@ -52,12 +52,16 @@
     padding: 0px 5px 0px 5px;
     }
 
-    .win-text {
+    .winner {
     color: $green;
     }
 
-    .lose-text {
+    .loser {
     color: $red;
+    }
+
+    .undefined-score {
+        
     }
 
     .white-text {

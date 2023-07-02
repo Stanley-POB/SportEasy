@@ -24,3 +24,36 @@
     display: flex;
     justify-content: space-between;
 }
+
+.undefined-score{
+    background-color: $very-almost-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $almost-grey;
+    border-radius: 4px;
+    padding: 0px 5px 0px 5px;
+    width: 0.5vw;
+}
+
+.winner {
+    background-color: $very-almost-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $almost-grey;
+    border-radius: 4px;
+    gap: 10px;
+    padding: 0px 5px 0px 5px;
+}
+
+.loser {
+    background-color: $very-almost-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $almost-grey;
+    border-radius: 4px;
+    gap: 10px;
+    padding: 0px 5px 0px 5px;
+}
